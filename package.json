@@ -1,5 +1,7 @@
 {
-  "name": "angular-starter-template",
+  "name": "{{PROJECT_NAME}}",
+  "description": "A {{TEMPLATE_TYPE}} starter project created by create-starter-app.",
+  "author": "{{AUTHOR}}",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

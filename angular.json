@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-starter-template": {
+    "{{PROJECT_NAME}}": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -26,9 +26,7 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.scss"
-            ]
+            "styles": ["src/styles.scss"]
           },
           "configurations": {
             "production": {
@@ -58,10 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-starter-template:build:production"
+              "buildTarget": "{{PROJECT_NAME}}:build:production"
             },
             "development": {
-              "buildTarget": "angular-starter-template:build:development"
+              "buildTarget": "{{PROJECT_NAME}}:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,9 +78,7 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.scss"
-            ]
+            "styles": ["src/styles.scss"]
           }
         }
       }
